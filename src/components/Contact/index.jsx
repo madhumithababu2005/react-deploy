@@ -7,7 +7,7 @@ const Contact = () => {
     <div className="home-container">
       <div className="welcome-text">
         <h1>Contact</h1>
-        <p>Your one-stop solution for everything you need edited.</p>
+        <p>Your one-stop solution for everything.</p>
       </div>
       <Footer />
 
