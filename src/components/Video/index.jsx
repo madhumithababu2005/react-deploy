@@ -1,8 +1,8 @@
 import React from 'react';
-import './about.css';
+import './video.css';
 import Footer from '../Footer';
 
-const About = () => {
+const Video = () => {
   return (
     <div className="home-container">
       
@@ -15,4 +15,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Video;
