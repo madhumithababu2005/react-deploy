@@ -5,8 +5,8 @@ import Navbar from "./components/Navbar";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import Home from "./components/Home";
-import About from "./components/About";
-import Services from "./components/Services";
+import Video from "./components/Video";
+import Products from "./components/Products";
 import Contact from "./components/Contact";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -15,6 +15,7 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 });
 
 const App = () => {
+  // eslint-disable-next-line 
   const [landingPageData, setLandingPageData] = useState({});
   useEffect(() => {
     setLandingPageData(JsonData);
@@ -26,8 +27,8 @@ const App = () => {
         <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
+          <Route path="/video" element={<Video />} />
+          <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
